@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Artem Zakharenko} \\ \vspace{1pt}
+    \small +7(958) 142-84-96 $|$ \href{mailto:zakhart1234567890@gmail.com}{\color{blue} zakhart1234567890@gmail.com} $|$ 
+    \href{http://github.com/fleex-x}{\color{blue} github} $|$
+    Saint-Petersburg, Russia
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Saint-Petersburg Campus of Higher School of Economics}{}
+      {Bachelor of Applied Mathematics and Computer Science}{Expected Graduation June 2024}
+          \resumeItemListStart
+            \resumeItem{September 2020 - Present}
+            \resumeItem{GPA: 8.35  out of 10}
+
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+%-----------Achievements-----------
+\section{Achievements}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {XIV Moscow Olympiad in Informatics, medalist, top 100 out of 400}{March 2020}
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Technocup, medalist, top 125 out of 600}{March 2020}
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {ICPC 2021–2022, North-Western Russia Regional Contest, top 18 out of 85}{December 2021}
+     \resumeSubHeadingListEnd
+          
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {IMC 2022, second prize, top 240 out of 660}{August 2022}
+          
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Algorithm teacher}{August 2021 – September 2021}
+      {Summer Computer Camp}{Russia, Perm}
+      \resumeItemListStart
+        \resumeItem{Explained different algorithms and data structures to high-school students.}
+        \resumeItem{Created problems for contests.}
+      \resumeItemListEnd
+
+    
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/fleex-x/jetbrains-deadlock-detector}{\color{blue} \textbf{Jet-Brains autumn project "Deadlock detector"}}} $|$ \emph{Python, lldb API, C++}}{October 2021 -- December 2021}
+          \resumeItemListStart
+            \resumeItem{Made a script using the lldb Python API that can detect some types of deadlocks in the lldb Debugger.}
+            \resumeItem{The task of the algorithm is to be able to find deadlocks in binary files without debug-info. Learned how to find the information and and made algorithm for my system (Ubuntu 20.04).}
+          \resumeItemListEnd
+    
+    \resumeSubheading
+      {Huawei internship}{August 2022 – October 2022}
+      {Math modeling laboratory}{Russia, Moscow/Saint-Petersburg}
+      \resumeItemListStart
+        \resumeItem{Internship in area of combinatorial optimization. }
+      \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{http://github.com/kuksag/portal-engine}{\color{blue} \textbf{Portal-Engine}} $|$ \emph{C++, OpenGl, Git}}{February -- June 2021}
+          \resumeItemListStart
+            \resumeItem{3D-Game with portal-rendering, team coursework for C++.}
+            \resumeItem{Made textures downloading, lighting with shadows, shaders.}
+          \resumeItemListEnd
+    
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/fleex-x/JB-deadlock-detector-test-task}{\color{blue} \textbf{Safe-mutex}}} $|$ \emph{C++, multithreading}}{September 2021}
+          \resumeItemListStart
+            \resumeItem{Test task for autumn Jet-Brains project "Deadlock detector in the debugger".}
+            \resumeItem{Made safe-mutex -- wrapper over the std::mutex that can allow deadlocks to be defined as they happen.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/getN1ght/fl-project-2021}{\color{blue} \textbf{Parser for L-language}}} $|$ \emph{Haskell, Parsec}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{Study project for formal-languages, parsing a programming language and comparing different libraries.}
+            \resumeItem{Made the grammar of the language in the team.}
+            \resumeItem{Made parser in Haskell using Parsec library.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/fleex-x/compile-time-regex-matching}{\color{blue} \textbf{Compile time regular expressions matching}}} $|$ \emph{C++, templates}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{The library that allows checking whether a string matches a regular expression in compile time.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/fleex-x/kv-aaa-s}{\color{blue} \textbf{Key-value storage}}} $|$ \emph{C++, Data Storage Systems}}{April -- June 2022}
+          \resumeItemListStart
+            \resumeItem{Skip-List based data storage system with LSM-structure.}
+            \resumeItem{Developed architecture and implemented that system in a team of 3.}
+          \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}
+        \item C++, C, Haskell, Python, Java, Assembler
+        \item Algorithms and Data structures, Data Storage Systems
+        \item Calculus, Linear Algebra, Probability Theory, Statistics basics
+        \item lldb Python API, Boost-Asio, OpenGL, Parsec
+        \item Linux, Bash, Git
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
